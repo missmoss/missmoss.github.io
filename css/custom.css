@@ -1,6 +1,13 @@
-body {
-  font-family: "Helvetica Neue", Arial, sans-serif;	
-}
-.text-primary {
+.my-primary {
   color: #fc00f6;
+}
+.my-secondary {
+  color: #09B098;
+}
+.my-normal {
+  color: #999999;
+}
+body {
+  background-color: #333333;
+  font-weight: 300;
 }
