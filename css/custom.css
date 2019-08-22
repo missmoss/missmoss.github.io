@@ -1,13 +1,24 @@
 .my-primary {
-  color: #fc00f6;
+  color: #D96248;
 }
 .my-secondary {
-  color: #09B098;
+  color: #5D735E;
 }
 .my-normal {
-  color: #999999;
+  color: #8C4B45;
 }
 body {
-  background-color: #333333;
+  background-color: #F2D1C9;
   font-weight: 300;
+}
+.card {
+  margin: 1rem;
+  background-color: #F2CD88;
+  border: #F2CD88;
+  font-weight: 300;
+  color: #8C4B45;
+}
+.btn {
+  background-color: #5D735E;
+  color: #F2CD88;
 }
