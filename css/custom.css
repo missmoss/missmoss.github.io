@@ -1,4 +1,4 @@
-.my-primary {
+/*.my-primary {
   color: #D96248;
 }
 .my-secondary {
@@ -21,4 +21,46 @@ body {
 .btn {
   background-color: #5D735E;
   color: #F2CD88;
+}*/
+html {
+  height: 100%; }
+body {
+  background-image: url("/img/bg.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: cover;
+  background-color: #D3D7DA;
+  font-weight: 300; }
+.my-primary {
+  color: #29516D;
+}
+.my-secondary {
+  color: #76064C;
+}
+.my-normal {
+  color: #021828;
+}
+.my-cover {
+  color: #a2674d;
+}
+.my-white {
+  color: #aa9395;
+}
+.card {
+  margin: 1rem;
+  background-color: #DAB9CE;
+  border: #DAB9CE;
+  font-weight: 300;
+  color: #76064C;
+}
+.btn {
+  background-color: #D4B46A;
+  color: #123752;
+}
+#cover {
+  height: 90vh;
+}
+#bio-bg {
+  background: rgba(170, 147, 149, 0.35);
 }
