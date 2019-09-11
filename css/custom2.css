@@ -5,9 +5,13 @@ body {
   background-position: right;
   background-size: cover;
   font-weight: 300; }
-nav {
-  background-color: rgba(153, 159, 164, 0.35);
+.navbar.scrolled {
+  background-color: rgba(153, 159, 164, 1)!important;
+  transition: background-color 200ms linear;
 }
+/* nav {
+  background-color: rgba(153, 159, 164, 0.35);
+} */
 a {
   color: #76064C;
 }
