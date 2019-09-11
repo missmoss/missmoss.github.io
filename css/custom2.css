@@ -5,9 +5,9 @@ body {
   background-position: right;
   background-size: cover;
   font-weight: 300; }
-/* nav {
-  background-color: #bda290;
-} */
+nav {
+  background-color: rgba(153, 159, 164, 0.35);
+}
 a {
   color: #76064C;
 }
