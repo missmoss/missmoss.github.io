@@ -1,66 +1,46 @@
-/*.my-primary {
-  color: #D96248;
-}
-.my-secondary {
-  color: #5D735E;
-}
-.my-normal {
-  color: #8C4B45;
-}
-body {
-  background-color: #F2D1C9;
-  font-weight: 300;
-}
-.card {
-  margin: 1rem;
-  background-color: #F2CD88;
-  border: #F2CD88;
-  font-weight: 300;
-  color: #8C4B45;
-}
-.btn {
-  background-color: #5D735E;
-  color: #F2CD88;
-}*/
 html {
   height: 100%; }
 body {
   background-image: url("/img/bg.jpg");
-  background-attachment: fixed;
+  /* background-attachment: fixed; */
   background-repeat: no-repeat;
-  background-position: right;
+  background-position: right bottom;
   background-size: cover;
-  background-color: #D3D7DA;
+  background-color: #bda290;
   font-weight: 300; }
+a {
+  color: #76064C;
+}
 .my-primary {
-  color: #29516D;
+  color: #999fa4;
+  font-weight: bold;
 }
 .my-secondary {
   color: #76064C;
 }
 .my-normal {
-  color: #021828;
+  color: #bda290;
 }
 .my-cover {
-  color: #a2674d;
+  color: #665e5a;
 }
 .my-white {
   color: #aa9395;
 }
 .card {
   margin: 1rem;
-  background-color: #DAB9CE;
-  border: #DAB9CE;
+  background-color: #302922;
+  border: #302922;
   font-weight: 300;
-  color: #76064C;
+  color: #bda290;
 }
 .btn {
   background-color: #D4B46A;
   color: #123752;
 }
 #cover {
-  height: 90vh;
+  height: 100vh;
 }
 #bio-bg {
-  background: rgba(170, 147, 149, 0.35);
+  background: #302922;
 }
