@@ -1,11 +1,18 @@
 body {
-  background-color: #bda290;
+  background-image: url("/img/bg.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: cover;
   font-weight: 300; }
-nav {
+/* nav {
   background-color: #bda290;
-}
+} */
 a {
   color: #76064C;
+}
+.main {
+  background-color: #bda290;
 }
 .my-primary {
   color: #999fa4;
