@@ -9,10 +9,10 @@ body {
   background-color: rgba(153, 159, 164, 1)!important;
   transition: background-color 200ms linear;
 }
-/* nav {
-  background-color: rgba(153, 159, 164, 0.35);
-} */
 a {
+  color: #76064C;
+}
+a:visited {
   color: #76064C;
 }
 .main {

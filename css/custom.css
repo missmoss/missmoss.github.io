@@ -11,6 +11,9 @@ body {
 a {
   color: #76064C;
 }
+a:visited {
+  color: #76064C;
+}
 .my-primary {
   color: #999fa4;
   font-weight: bold;
