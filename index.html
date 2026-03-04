@@ -1,74 +1,184 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <!-- Required meta tags -->
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta property="og:image" content="img/bg-og.jpg">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Claire Tsao</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/v2.css">
+  <style>
+    /* HOME ONLY */
+    #home {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      padding: 8rem 3rem 4rem;
+      max-width: 900px;
+      margin: 0 auto;
+    }
 
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <link rel="stylesheet" href="css/custom.css">
+    .hero-content h1 {
+      font-family: var(--serif);
+      font-size: clamp(3rem, 8vw, 6rem);
+      font-weight: 300;
+      line-height: 1.1;
+      margin-bottom: 1.5rem;
+    }
 
-  <title class="my-primary">Claire Tsao</title>
+    .hero-content h1 em {
+      font-style: italic;
+      color: var(--accent);
+    }
+
+    .hero-content p {
+      font-size: 1rem;
+      color: var(--text-light);
+      max-width: 480px;
+      margin-bottom: 2.5rem;
+      line-height: 1.8;
+    }
+
+    .hero-links {
+      display: flex;
+      gap: 2rem;
+      align-items: center;
+    }
+
+    .hero-links a {
+      text-decoration: none;
+      font-size: 0.75rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--text-light);
+      transition: color 0.2s;
+    }
+
+    .hero-links a:hover { color: var(--text); }
+    .hero-links .arrow { color: var(--accent); }
+
+    /* ABOUT */
+    #about .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      gap: 4rem;
+      align-items: start;
+    }
+
+    #about .about-photo {
+      width: 100%;
+      aspect-ratio: 3/4;
+      object-fit: cover;
+    }
+
+    #about h2 {
+      font-family: var(--serif);
+      font-size: 2.5rem;
+      font-weight: 300;
+      margin-bottom: 1.5rem;
+      line-height: 1.2;
+    }
+
+    #about p {
+      color: var(--text-light);
+      margin-bottom: 1rem;
+      line-height: 1.8;
+    }
+  </style>
 </head>
 <body>
-  <!-- Image and text -->
-  <nav class="navbar">
-    <ul class="nav ml-auto">
-      <li class="nav-item">
-        <a class="nav-link active my-secondary" href="#">Home</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link my-secondary" href="cv.html">CV</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link my-secondary" href="#project">Project</a>
-      </li>
+
+  <nav>
+    <a href="index-v2.html" class="logo">Claire Tsao</a>
+    <ul>
+      <li><a href="index-v2.html" class="active">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="photo-v2.html">Photo</a></li>
+      <li><a href="work-v2.html">Work</a></li>
     </ul>
   </nav>
-  <div class="container-fluid">
-    <div class="row justify-content-md-left align-items-end" id="cover">
-      <div class="jumbotron jumbotron-fluid" id="bio-bg">
-        <div class="container">
-          <h1 class="display-4 my-white">Claire Tsao</h1>
-          <p class="my-normal">Strategic Data Expert & Architect specializing in AI-driven organizational transformation and high-scale infrastructure. I excel at translating technical complexity into actionable insights for leadership, ensuring that engineering efforts are aligned with long-term strategic goals. I am passionate about navigating organizational ambiguity to bridge the gap between deep technical implementation and high-level decision-making to drive systemic impact.</p>
-          <p class="my-normal">
-            <a class="my-primary" href="https://www.linkedin.com/in/clairetsao/" target="_blank">Linkedin</a> |
-          <a class="my-primary" href="https://github.com/missmoss" target="_blank">Github</a>
-        </p>
-        </div>
+
+  <!-- HERO -->
+  <div id="home">
+    <div class="hero-content">
+      <h1>Data engineer,<br><em>photographer,</em><br>builder.</h1>
+      <p>I work at the intersection of AI systems and human intent. Based in Seattle.</p>
+      <div class="hero-links">
+        <a href="work-v2.html">Work <span class="arrow">→</span></a>
+        <a href="photo-v2.html">Photos <span class="arrow">→</span></a>
+        <a href="https://www.linkedin.com/in/clairetsao/" target="_blank">LinkedIn</a>
+        <a href="https://github.com/missmoss" target="_blank">GitHub</a>
       </div>
     </div>
-    <h1 id="project">Project</h1>
-    <div class="row justify-content-md-center">
-      <div class="col-8 mt-auto">
-        <div class="row">
-          <div class="card" style="width: 24rem;">
-            <img src="img/rfrd2018.png" class="card-img-top" alt="Taiwanese Referendum, 2018">
-            <div class="card-body">
-              <h5 class="card-title">Taiwanese Referendum, 2018</h5>
-              <p class="card-text">An interactive data visualization project. On Nov 24 2018, ten referendums were held in Taiwan alongside the midterm local elections. 
-                We hope to help you understand what the results are.</p>
-                <a href="https://rfrd-tw.github.io/en/index.html" class="btn">Website</a>
-              </div>
-            </div>
-            <div class="card" style="width: 24rem;">
-              <img src="img/taipei-income.png" class="card-img-top" alt="Taipei Income Map">
-              <div class="card-body">
-                <h5 class="card-title">Taipei Income Map</h5>
-                <p class="card-text">An interactive story of the income distribution in Taipei. A visual presentation of thousands of rows income open data.</p>
-                <a href="https://missmoss.github.io/taipei-income-map/" class="btn">Website</a>
-              </div>
-            </div>
+  </div>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <p class="section-label">About</p>
+    <div class="about-grid">
+      <img src="img/about.jpg" alt="Claire Tsao" class="about-photo">
+      <div>
+        <h2>Pattern recognition<br>as a way of life.</h2>
+        <p>Data Engineer at AWS. I build AI systems, think about why they fail, and occasionally photograph streets at odd hours.</p>
+        <p>My work lives at the edge between technical depth and strategic clarity — the part where engineering decisions become product decisions.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- PHOTO PREVIEW -->
+  <section id="photo-preview">
+    <div class="section-header">
+      <p class="section-label" style="margin-bottom:0">Photography</p>
+      <a href="photo-v2.html" class="view-all">View all →</a>
+    </div>
+    <div class="photo-grid">
+      <div class="photo-item"><img src="img/arch1.jpg" alt=""></div>
+      <div class="photo-item"><img src="img/scene2.jpeg" alt=""></div>
+      <div class="photo-item"><img src="img/scene3.jpg" alt=""></div>
+    </div>
+  </section>
+
+  <!-- WORK PREVIEW -->
+  <section id="work-preview">
+    <div class="section-header">
+      <p class="section-label" style="margin-bottom:0">Work</p>
+      <a href="work-v2.html" class="view-all">View all →</a>
+    </div>
+    <div class="work-list">
+      <div class="work-item">
+        <span class="work-num">[01]</span>
+        <img src="img/rfrd2018.png" alt="Taiwanese Referendum 2018" class="work-thumb">
+        <div>
+          <div class="work-title">Taiwanese Referendum, 2018</div>
+          <div class="work-desc">
+            Interactive data visualization of ten referendums held alongside Taiwan's midterm elections.
+            <a href="https://rfrd-tw.github.io/en/index.html" target="_blank">View project →</a>
           </div>
         </div>
       </div>
+      <div class="work-item">
+        <span class="work-num">[02]</span>
+        <img src="img/taipei-income.png" alt="Taipei Income Map" class="work-thumb">
+        <div>
+          <div class="work-title">Taipei Income Map</div>
+          <div class="work-desc">
+            Visual story of income distribution across Taipei, built from thousands of rows of open data.
+            <a href="https://missmoss.github.io/taipei-income-map/" target="_blank">View project →</a>
+          </div>
         </div>
-        <!-- Optional JavaScript -->
-        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-      </body>
-      </html>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2026 Claire Tsao</p>
+    <div class="footer-links">
+      <a href="https://www.linkedin.com/in/clairetsao/" target="_blank">LinkedIn</a>
+      <a href="https://github.com/missmoss" target="_blank">GitHub</a>
+      <a href="cv.html">CV</a>
+    </div>
+  </footer>
+
+</body>
+</html>

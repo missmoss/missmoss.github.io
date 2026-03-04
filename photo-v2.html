@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Photography — Claire Tsao</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/v2.css">
+  <style>
+    .photo-page {
+      padding: 0 3rem 8rem;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    .photo-section {
+      margin-bottom: 8rem;
+    }
+
+    .photo-section-label {
+      font-size: 0.65rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 4rem;
+    }
+
+    .photo-entry {
+      margin-bottom: 6rem;
+    }
+
+    /* 直式照片：窄一點，置中或偏左 */
+    .photo-entry.portrait {
+      max-width: 55%;
+    }
+
+    .photo-entry.portrait-center {
+      max-width: 55%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .photo-entry.portrait-right {
+      max-width: 55%;
+      margin-left: auto;
+    }
+
+    /* 橫式照片：全寬 */
+    .photo-entry.landscape {
+      max-width: 100%;
+    }
+
+    .photo-entry img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="index-v2.html" class="logo">Claire Tsao</a>
+    <ul>
+      <li><a href="index-v2.html">Home</a></li>
+      <li><a href="index-v2.html#about">About</a></li>
+      <li><a href="photo-v2.html" class="active">Photo</a></li>
+      <li><a href="work-v2.html">Work</a></li>
+    </ul>
+  </nav>
+
+  <div class="page-header">
+    <p class="section-label">Photography</p>
+    <h1>Streets, light,<br><em style="font-style: italic; color: var(--accent)">and in-between moments.</em></h1>
+  </div>
+
+  <div class="photo-page">
+
+    <!-- city -->
+    <div class="photo-section">
+      <p class="photo-section-label">City</p>
+
+      <div class="photo-entry portrait">
+        <img src="img/arch1.jpg" alt="">
+      </div>
+
+      <div class="photo-entry landscape">
+        <img src="img/arch4.jpg" alt="">
+      </div>
+    </div>
+
+    <!-- scene -->
+    <div class="photo-section">
+      <p class="photo-section-label">Scene</p>
+
+      <div class="photo-entry landscape">
+        <img src="img/scene3.jpg" alt="">
+      </div>
+
+      <div class="photo-entry landscape">
+        <img src="img/scene2.jpeg" alt="">
+      </div>
+
+      <div class="photo-entry landscape">
+        <img src="img/scene1.jpg" alt="">
+      </div>
+    </div>
+
+  </div>
+
+  <footer>
+    <p>© 2026 Claire Tsao</p>
+    <div class="footer-links">
+      <a href="https://www.linkedin.com/in/clairetsao/" target="_blank">LinkedIn</a>
+      <a href="https://github.com/missmoss" target="_blank">GitHub</a>
+      <a href="cv.html">CV</a>
+    </div>
+  </footer>
+
+</body>
+</html>
