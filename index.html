@@ -85,6 +85,24 @@
       margin-bottom: 1rem;
       line-height: 1.8;
     }
+
+    @media (max-width: 640px) {
+      #home {
+        padding: 7rem 1.5rem 3rem;
+        min-height: auto;
+      }
+      .hero-links {
+        flex-wrap: wrap;
+        gap: 1.2rem;
+      }
+      #about .about-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+      }
+      #about .about-photo {
+        max-width: 240px;
+      }
+    }
   </style>
 </head>
 <body>

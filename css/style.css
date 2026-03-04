@@ -219,3 +219,46 @@ footer a {
 }
 
 footer a:hover { color: var(--text); }
+
+/* =====================
+   RESPONSIVE (mobile)
+   ===================== */
+@media (max-width: 640px) {
+
+  nav {
+    padding: 1rem 1.5rem;
+  }
+
+  nav ul {
+    gap: 1.2rem;
+  }
+
+  section {
+    padding: 4rem 1.5rem;
+  }
+
+  .page-header {
+    padding: 6rem 1.5rem 3rem;
+  }
+
+  .photo-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .work-item {
+    grid-template-columns: 1fr;
+    gap: 0.8rem;
+    padding: 2rem 0;
+  }
+
+  .work-thumb {
+    max-width: 260px;
+  }
+
+  footer {
+    flex-direction: column;
+    gap: 1rem;
+    align-items: flex-start;
+    padding: 2rem 1.5rem;
+  }
+}
